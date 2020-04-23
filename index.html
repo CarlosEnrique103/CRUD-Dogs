@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/assets/styles/main.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chester</title>
+    <link rel="stylesheet" href="./src/assets/styles/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/images/logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href=""
+            ><img src="./src/assets/images/logo.png" alt="Logo de mascota"
+          /></a>
+          <h1>Chester</h1>
+        </div>
+        <button class=" btn-open-modal btn btn-header ">Agregar Mascotas</button>
+      </header>
+      <main>
+        <div class="dogs">
+          <button class="btn-open-modal btn">Agregar Mascotas</button>
+        </div>
+      </main>
+      <footer>&copy; Copyright - Juan Carlos</footer>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+      <div class="modal-flex">
+        <div class="modal-header flex">
+          <h2>Agregar Mascota</h2>
+          <button class="modal-close-btn" id="close-btn">
+             &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="flex-modal-body ">
+              <div class="input-block">
+                <div class="input">
+                  <label for="nombre">Nombre</label>
+                  <br />
+                  <input type="text" name="nombre" id="nombre" />
+                </div>
+                <div class="input">
+                  <label for="raza">Raza</label>
+                  <br />
+                  <input type="text" name="raza" id="raza" />
+                </div>
+                <div class="input">
+                  <label for=""></label>
+                  <br />
+                  <button class="btn-modal-generate">Generar fotografía</button>
+                </div>
+              </div>
+              <div class="input-block">
+                <div class="input-img">
+                  <label for="">Fotografía</label>
+                  <br />
+                  <img
+                    src="./src/assets/images/logo.png"
+                    alt=""
+                    width="150"
+                    height="150"
+                  />
+                  <input
+                    style="display: none;"
+                    type="text"
+                    name="url"
+                  />
+                </div>
+              </div>
+              
+            </div>
+            <div class="input-block">
+                <label for="">Sobre Mi</label>
+                <br>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="modal-footer flex">
+              <input type="submit" value="Aceptar" />
+              <input type="reset" value="Cancelar" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="./src/assets/scripts/main.js"></script>
-</body>
+  </body>
 </html>
