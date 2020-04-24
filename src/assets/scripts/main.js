@@ -24,9 +24,12 @@ const modal = document.getElementById('modal');
 
 //Creación de card de objetos del localstorage
 let dogs= JSON.parse(localStorage.getItem('dogs'));
-dogs.forEach(dog=>{
-    createCard(dog);
-})
+if(dogs){
+    dogs.forEach(dog=>{
+        createCard(dog);
+    })
+}
+
 
 //MODAL EVENTS
 btn_open_modal_header.addEventListener('click', function(){
