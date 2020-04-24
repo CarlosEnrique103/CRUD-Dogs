@@ -21,38 +21,12 @@
           /></a>
           <h1>Chester</h1>
         </div>
-        <button class=" btn-open-modal btn btn-header ">Agregar Mascotas</button>
+        <button id="btn-modal-header" class=" btn-open-modal btn btn-header ">Agregar Perro</button>
       </header>
       <main>
-        <div class="dogs">
-          <article class="dog-card">
-            <div class="dc-content">
-                <div class="dc-buttons">
-                  <span> 
-                    <i class="fa fa-trash" aria-hidden="true"></i>
-                </span>
-                  <span> 
-                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                  </span>
-                 
-                </div>
-                <div class="dc-img">
-                </div>
-                <div class="dc-description">
-                    <h2>Chester</h2>
-                    <h3>Pastor Alemán</h3>
-                    <p>
-                      El pastor alemán u ovejero es una raza canina que proviene de Alemania.​La raza es relativamente nueva.
-                    </p>
-                </div>                
-            </div>
-
-            <div class="dc-footer">
-                <img src="./src/assets/images/footprint.png" alt="">
-            </div>
-           </article>
+        <div id="dogs" class="dogs">
         </div>
-        <button class="btn-open-modal btn">Agregar Mascotas</button>
+        <button id="btn-modal-main" class="btn-open-modal btn">Agregar Perro</p></button>
       </main>
       <footer>&copy; Copyright - Juan Carlos</footer>
     </div>
@@ -66,48 +40,44 @@
           </button>
         </div>
         <div class="modal-body">
-          <form>
+          <form id="form-dog"> 
             <div class="flex-modal-body ">
               <div class="input-block">
                 <div class="input">
-                  <label for="nombre">Nombre</label>
+                  <label for="nombre">Nombre:</label>
                   <br />
-                  <input type="text" name="nombre" id="nombre" />
+                  <input required type="text" name="nombre" id="nombre" />
                 </div>
                 <div class="input">
-                  <label for="raza">Raza</label>
+                  <label for="raza">Raza:</label>
                   <br />
-                  <input type="text" name="raza" id="raza" />
+                  <input required type="text" name="raza" id="raza" />
                 </div>
                 <div class="input">
-                  <label for=""></label>
+
                   <br />
                   <button class="btn-modal-generate">Generar fotografía</button>
                 </div>
               </div>
               <div class="input-block">
                 <div class="input-img">
-                  <label for="">Fotografía</label>
+                  <label for="">Fotografía:</label>
                   <br />
                   <img
                     src="./src/assets/images/logo.png"
                     alt=""
                     width="150"
                     height="150"
-                  />
-                  <input
-                    style="display: none;"
-                    type="text"
-                    name="url"
+                    class="img-modal"
                   />
                 </div>
               </div>
               
             </div>
             <div class="input-block">
-                <label for="">Sobre Mi</label>
+                <label for="about">Acerca de el:</label>
                 <br>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea required name="about" id="about" cols="30" rows="3"></textarea>
             </div>
             <div class="modal-footer flex">
               <input type="submit" value="Aceptar" />

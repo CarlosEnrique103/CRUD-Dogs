@@ -78,7 +78,7 @@ button {
 
 .container header {
   width: 100%;
-  padding: 10px;
+  padding: 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,12 +120,13 @@ button {
 }
 
 .container header .btn-header {
-  display: block;
+  display: none;
 }
 
 .container main {
   padding: 10px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .container main .dogs {
@@ -133,7 +134,7 @@ button {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
+  grid-gap: 10px 10px;
   width: 960px;
   margin: auto;
 }
@@ -152,8 +153,8 @@ button {
 }
 
 .container main .dogs .dog-card .dc-content .dc-img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-image: url(https://images.dog.ceo/breeds/terrier-norwich/n02094258_773.jpg);
   background-repeat: no-repeat;
   background-position: 50%;
@@ -172,7 +173,7 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 2em;
-  color: rgba(252, 184, 67, 0.9);
+  color: rgba(252, 184, 67, 0.5);
   padding: 10px;
 }
 
@@ -208,6 +209,7 @@ button {
   padding: 5px 10px;
   font-size: 1.3em;
   line-height: 1.2;
+  color: #382f2f;
 }
 
 .container footer {
